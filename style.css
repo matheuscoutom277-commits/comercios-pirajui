@@ -1,0 +1,168 @@
+/* --- RESET E ESTILOS GERAIS --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background-color: #121214;
+    color: #e1e1e6;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* --- HEADER --- */
+#topo-site {
+    background: linear-gradient(135deg, #1e1e24 0%, #2b2b36 100%);
+    padding: 50px 20px;
+    border-bottom: 2px solid #323238;
+    margin-bottom: 40px;
+}
+
+#topo-site h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+#topo-site p {
+    font-size: 1.1rem;
+    color: #a8a8b3;
+}
+
+/* --- CONTAINER PRINCIPAL --- */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- SECÇÕES E CARDS --- */
+section {
+    background-color: #1e1e24;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #29292e;
+    text-align: left;
+    
+    /* ADICIONE ESTAS DUAS LINHAS PARA O EFEITO */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* O que acontece quando o rato (mouse) passa por cima */
+
+section h2 {
+    font-size: 1.8rem;
+    color: #00b4d8;
+    border-bottom: 2px solid #00b4d8;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+section h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #c4c4cc;
+    margin-bottom: 15px;
+}
+section:hover {
+    transform: translateY(-6px); /* Faz o cartão subir 6 pixels */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Aumenta a sombra para dar profundidade */
+}
+section a {
+    color: #f10505; /* Um azul claro bem moderno e elegante */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+section a:visited {
+    color: #f10505; /* Mantém a mesma cor para não ficar com aquele roxo antigo */
+}
+
+section a:hover {
+    color: #0dccc2; /* Um tom mais claro quando o rato passa por cima */
+    text-decoration: underline;
+    transform: translateY(-2px); /* Dá uma leve levantada dinâmica também no link! */
+}
+section a:focus{
+    color: green;
+}
+section a:active{
+    color: white;
+}
+
+/* --- MAPAS E ILUSTRAÇÕES --- */
+figure {
+    margin: 20px 0;
+    width: 100%;
+}
+
+iframe {
+    width: 100% !important;
+    max-width: 100%;
+    height: 380px !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.legenda-googlemaps {
+    font-size: 0.85rem;
+    color: #8d8d99;
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* --- RODAPÉ --- */
+#rodape {
+    background-color: #0d0d0f;
+    color: #8d8d99;
+    padding: 30px 0;
+    margin-top: 60px;
+    border-top: 1px solid #29292e;
+}
+
+.container-rodape {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container-rodape p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.links-rodape a {
+    color: #c4c4cc;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.links-rodape a:hover {
+    color: #00b4d8;
+    transform: translateY(-2px);
+}
